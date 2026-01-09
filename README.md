@@ -214,7 +214,7 @@ MIT License - see LICENSE file for details.
         <br>
         <strong>yus/yusdesign</strong>
         <br>
-        [![GitHub](https://github.com/yus/yus.github.io/blob/master/images/yus143.png)](https://yusdesign.github.io)
+        [![GitHub](https://yusdesign.github.io)](https://github.com/yus/yus.github.io/blob/master/images/yus143.png)
       </td>
       <td align="center" width="50%">
         <a href="https://deepseek.com">
@@ -231,11 +231,9 @@ MIT License - see LICENSE file for details.
 
 <div align="center">
   
-  Made with ❤️ using [Markdown](https://www.markdownguide.org/) | 
-  Last updated: `DATE`
+  | Made with ❤️ using [Markdown](https://www.markdownguide.org/) | Last updated: `DATE` |  
   
-  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) | 
-  [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md)
+  | [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) | [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md) |  
 
 </div>
 
