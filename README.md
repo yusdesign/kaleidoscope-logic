@@ -214,18 +214,16 @@ MIT License - see LICENSE file for details.
         <br>
         <strong>yus/yusdesign</strong>
         <br>
-        [![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?logo=github)](https://yusdesign.github.io)
-        [![Website](https://img.shields.io/badge/Website-Visit-green?logo=globe)](https://yusdesign.github.io)
+        [![GitHub](https://github.com/yus/yus.github.io/blob/master/images/yus143.png)](https://yusdesign.github.io)
       </td>
       <td align="center" width="50%">
         <a href="https://deepseek.com">
-          <img src="https://seeklogo.com/images/D/deepseek-logo-81C3303F26-seeklogo.com.png" alt="DeepSeek Logo" width="100">
+          <img src="https://cdn.deepseek.com/logo.png" alt="DeepSeek Logo" height="165">
         </a>
         <br>
         <strong>Powered by DeepSeek</strong>
         <br>
-        [![DeepSeek](https://img.shields.io/badge/DeepSeek-AI-purple?logo=ai)](https://deepseek.com)
-        [![Chat](https://img.shields.io/badge/Chat_with_AI-8A2BE2)](https://chat.deepseek.com)
+        [![Chat](https://cdn.deepseek.com/logo.png)](https://chat.deepseek.com)
       </td>
     </tr>
   </table>
