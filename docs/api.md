@@ -69,25 +69,15 @@ Configuration Parameters
 | Parameter | Type | Default | Description |  
 | --- | --- | --- | --- |  
 | left_seed | int | 42 | Random seed for left fragments |  
-| --- | --- | --- | --- |  
 | right_seed | int | 43 | Random seed for right fragments |
-| --- | --- | --- | --- |  
 | symmetry_folds | int | 6 | Number of symmetry folds (mirrors × 2) |  
-| --- | --- | --- | --- |  
 | fragments_per_eye | int | 9 | Number of initial fragments per system |  
-| --- | --- | --- | --- |  
 | delta_left | float | 0.08 | Left phase increment per frame (rad) |  
-| --- | --- | --- | --- |  
 | delta_right | float | 0.095 | Right phase increment per frame (rad) |  
-| --- | --- | --- | --- |  
 | initial_left | float | 0.0 | Initial left phase (rad) |  
-| --- | --- | --- | --- |  
 | initial_right | float | 0.39 | Initial right phase (rad) |
-| --- | --- | --- | --- |  
 | color_palette | str | 'philosophical' | Color scheme ('philosophical', 'complementary', 'rainbow') |  
-| --- | --- | --- | --- |  
 | resolution | int | 512 | Image resolution |  
-| --- | --- | --- | --- |  
 | dpi | int | 100 | Image DPI for saving |  
 
 Methods
