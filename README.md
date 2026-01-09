@@ -209,21 +209,21 @@ MIT License - see LICENSE file for details.
     <tr>
       <td align="center" width="50%">
         <a href="https://yusdesign.github.io">
-          <img src="[yusdesign](https://github.com/yus/yus.github.io/blob/master/images/yus143.png)" alt="yusdesign, L" width="100" style="border-radius: 10px;">
+          <img src="https://yus.github.io/blob/images/yus143.png" alt="yusdesign, L" width="143"">  
         </a>
         <br>
         <strong>yus/yusdesign</strong>
         <br>
-        [![GitHub](https://yusdesign.github.io)](https://github.com/yus/yus.github.io/blob/master/images/yus143.png)
+        [![GitHub](https://yusdesign.github.io)](https://yus.github.io/blob/images/yus143.png)  
       </td>
       <td align="center" width="50%">
         <a href="https://deepseek.com">
-          <img src="https://cdn.deepseek.com/logo.png" alt="DeepSeek Logo" height="165">
+          <img src="https://cdn.deepseek.com/logo.png" alt="DeepSeek Logo" width="143">  
         </a>
         <br>
         <strong>Powered by DeepSeek</strong>
         <br>
-        [![Chat](https://cdn.deepseek.com/logo.png)](https://chat.deepseek.com)
+        [![Chat](https://chat.deepseek.com)](https://cdn.deepseek.com/logo.png)  
       </td>
     </tr>
   </table>
