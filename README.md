@@ -162,9 +162,9 @@ The complete research paper is available in the paper/ directory.
 ```bibtex
 @article{kaleidoscope2024,
   title={Binocular Kaleidoscope Logic: A Computational Model of Constructed Reality Through Symmetry and Phase Dynamics},
-  author={Research Team},
+  author={yusdesign research team},
   journal={Preprint},
-  year={2024},
+  year={2026},
   url={https://github.com/yusdesign/kaleidoscope-logic}
 }
 ```
@@ -182,33 +182,9 @@ paper/figures/kaleidoscope_static.png
 Sequence Evolution
 
 Frame 1 Frame 13 Frame 25
-paper/figures/exact_sequence/kaleidoscope_frame_00.png paper/figures/exact_sequence/kaleidoscope_frame_12.png paper/figures/exact_sequence/kaleidoscope_frame_24.png
-
-🔄 Git Workflow
-
-Connecting Overleaf to GitHub
-
-```bash
-# In Overleaf project: Download as ZIP, then:
-unzip overleaf-project.zip
-cd overleaf-project
-
-# Initialize Git
-git init
-git remote add origin https://github.com/yusdesign/kaleidoscope-logic.git
-
-# First commit
-git add .
-git commit -m "Initial paper from Overleaf"
-git branch -M main
-git push -u origin main
-```
-
-Two-Way Sync Setup
-
-1. Local repository acts as bridge
-2. Overleaf: Manual download/upload for now (consider Git integration)
-3. GitHub: Primary version control
+paper/figures/exact_sequence/kaleidoscope_frame_00.png 
+paper/figures/exact_sequence/kaleidoscope_frame_12.png 
+paper/figures/exact_sequence/kaleidoscope_frame_24.png
 
 🤝 Contributing
 
