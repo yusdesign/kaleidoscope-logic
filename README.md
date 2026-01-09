@@ -207,12 +207,12 @@ MIT License - see LICENSE file for details.
 <div>
   <table align="center" width="100%">
     <tr>
-      <td align="center" width="50%">
+      <td align="center" width="50%" border="0">
         <a href="https://yusdesign.github.io">
           <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143"">  
         </a>
       </td>
-      <td align="center" width="50%">
+      <td align="center" width="50%" border="0">
         <a href="https://chat.deepseek.com">
           <img src="https://cdn.deepseek.com/logo.png" alt="DeepSeek Logo" width="165">  
         </a>        
