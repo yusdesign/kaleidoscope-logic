@@ -207,12 +207,12 @@ MIT License - see LICENSE file for details.
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="50%">
+      <td align="center" width="100%">
         <a href="https://yusdesign.github.io">
           <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143"">  
         </a>
       </td>
-      <td align="center" width="50%">
+      <td align="center" width="100%">
         <a href="https://chat.deepseek.com">
           <img src="https://cdn.deepseek.com/logo.png" alt="DeepSeek Logo" width="143">  
         </a>        
@@ -223,17 +223,17 @@ MIT License - see LICENSE file for details.
 
 <div align="center">
   
-  | Made with ❤️ using [Markdown](https://www.markdownguide.org/) | Last updated: `DATE` |  
+  Made with ❤️ using [Markdown](https://www.markdownguide.org/)  
+  Last updated: `DATE`  
   
-  | [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) | [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md) |  
+  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+  [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md)  
 
 </div>
 
 <!-- Optional: Add a separator line -->
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="Divider" width="100%">
-
 ---
 
 "Reality is not found but made. Each rotation, each phase shift, each fusion creates a new world."
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="Divider" width="100%">
