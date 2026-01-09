@@ -204,7 +204,7 @@ MIT License - see LICENSE file for details.
 
 ## 📍 Connect With Us
 
-<div align="left">
+<div align="center" width="100%">
   <table>
     <tr>
       <td align="center" width="50%">
