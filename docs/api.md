@@ -2,9 +2,9 @@
 
 📚 Complete API Documentation
 
-API Documentation: Kaleidoscope Logic Framework
+# API Documentation: Kaleidoscope Logic Framework
 
-Table of Contents
+## Table of Contents
 
 1. Overview
 2. Installation
@@ -17,13 +17,13 @@ Table of Contents
 9. Examples
 10. Advanced Usage
 
-Overview
+## Overview
 
 The Kaleidoscope Logic Framework provides tools for generating, visualizing, and analyzing binocular kaleidoscope patterns that model constructed perception through symmetry operations.
 
-Installation
+## Installation
 
-From Source
+### From Source
 
 ```bash
 git clone https://github.com/yusdesign/kaleidoscope-logic.git
@@ -37,7 +37,7 @@ As Package (Future)
 pip install kaleidoscope-logic
 ```
 
-Core Classes
+### Core Classes
 
 BinocularKaleidoscope
 
@@ -64,7 +64,7 @@ config = KaleidoscopeConfig(
 kaleido = BinocularKaleidoscope(config)
 ```
 
-Configuration Parameters
+### Configuration Parameters
 
 | Parameter | Type | Default | Description |  
 | --- | --- | --- | --- |  
@@ -80,7 +80,7 @@ Configuration Parameters
 | resolution | int | 512 | Image resolution |  
 | dpi | int | 100 | Image DPI for saving |  
 
-Methods
+## Methods
 
 ### reset_phases()
 
@@ -89,14 +89,14 @@ kaleido.reset_phases()
 # Resets phase angles to initial values
 ```
 
-rotate()
+### rotate()
 
 ```python
 kaleido.rotate()
 # Advances phases by one step (delta_left, delta_right)
 ```
 
-generate_frame(style='frame')
+### generate_frame(style='frame')
 
 ```python
 # Generate artistic frame (black background)
@@ -106,7 +106,7 @@ fig = kaleido.generate_frame(style='frame')
 fig = kaleido.generate_frame(style='exact')
 ```
 
-generate_sequence(num_frames=25, output_dir=None, style='frame', prefix='frame')
+### generate_sequence(num_frames=25, output_dir=None, style='frame', prefix='frame')
 
 ```python
 # Generate 25-frame artistic sequence
@@ -126,7 +126,7 @@ files = kaleido.generate_sequence(
 )
 ```
 
-SequenceGenerator
+## SequenceGenerator
 
 Advanced sequence generation with multiple patterns.
 
@@ -140,9 +140,9 @@ generator = SequenceGenerator()
 generator = SequenceGenerator('configs/custom.json')
 ```
 
-Methods
+## Methods
 
-generate_sequence(sequence_name='main', style='both', symmetry_folds=6, fragments_per_eye=9)
+### generate_sequence(sequence_name='main', style='both', symmetry_folds=6, fragments_per_eye=9)
 
 ```python
 # Generate main sequence with both styles
@@ -177,7 +177,7 @@ quick 10 0.15 0.18 Quick demonstration
 
 KaleidoscopeVisualizer
 
-Advanced visualization and analysis tools.
+## Advanced visualization and analysis tools.
 
 ```python
 from src.visualization import KaleidoscopeVisualizer
@@ -185,9 +185,9 @@ from src.visualization import KaleidoscopeVisualizer
 visualizer = KaleidoscopeVisualizer(sequences_dir='outputs/sequences')
 ```
 
-Methods
+## Methods
 
-create_montage(sequence_dir, output_file, grid_shape=(5, 5), frame_indices=None)
+### create_montage(sequence_dir, output_file, grid_shape=(5, 5), frame_indices=None)
 
 ```python
 # Create montage of frames
@@ -207,7 +207,7 @@ visualizer.create_montage(
 )
 ```
 
-create_phase_analysis_plot(metadata_file, output_file)
+### create_phase_analysis_plot(metadata_file, output_file)
 
 ```python
 # Create phase analysis visualization
@@ -217,7 +217,7 @@ visualizer.create_phase_analysis_plot(
 )
 ```
 
-create_animation(sequence_dir, output_file, fps=10)
+### create_animation(sequence_dir, output_file, fps=10)
 
 ```python
 # Create GIF animation
@@ -235,7 +235,7 @@ visualizer.create_animation(
 )
 ```
 
-create_comparison_grid(sequence_dirs, output_file, frame_indices=None, titles=None)
+### create_comparison_grid(sequence_dirs, output_file, frame_indices=None, titles=None)
 
 ```python
 # Compare multiple sequences
@@ -251,7 +251,7 @@ visualizer.create_comparison_grid(
 )
 ```
 
-create_3d_phase_plot(metadata_files, output_file)
+### create_3d_phase_plot(metadata_files, output_file)
 
 ```python
 # 3D visualization of phase evolution
@@ -264,9 +264,9 @@ visualizer.create_3d_phase_plot(
 )
 ```
 
-Sequence Generation
+## Sequence Generation
 
-Using Command Line
+### Using Command Line
 
 ```bash
 # Generate main sequence with both styles
@@ -285,7 +285,7 @@ python generate_sequences.py --sequence main --style both --folds 8 --fragments 
 python generate_sequences.py --sequence main --config configs/custom.json
 ```
 
-Programmatic Generation
+### Programmatic Generation
 
 ```python
 from src.generate_sequences import SequenceGenerator
@@ -311,9 +311,9 @@ print(f"Main sequence: {all_metadata['main']['frames']} frames")
 print(f"Phase range: {all_metadata['main']['frames_data'][-1]['phase_diff']:.3f} rad")
 ```
 
-Visualization
+## Visualization
 
-Quick Visualization
+### Quick Visualization
 
 ```python
 from src.visualization import create_demo_visualizations
@@ -327,7 +327,7 @@ create_demo_visualizations()
 # - outputs/visualizations/main_sequence.gif
 ```
 
-Custom Visualization Pipeline
+### Custom Visualization Pipeline
 
 ```python
 from src.visualization import KaleidoscopeVisualizer
@@ -359,9 +359,9 @@ visualizer.create_animation(
 )
 ```
 
-Analysis
+## Analysis
 
-Statistical Analysis
+### Statistical Analysis
 
 ```python
 import pandas as pd
@@ -384,7 +384,7 @@ df['complexity'] = np.abs(np.sin(df['left_angle']) * np.cos(df['right_angle']))
 print(f"Peak complexity: {df['complexity'].max():.3f} at frame {df['complexity'].idxmax()}")
 ```
 
-Fourier Analysis
+### Fourier Analysis
 
 ```python
 from scipy.fft import fft
@@ -407,9 +407,9 @@ print(f"Dominant frequency: {dominant_freq:.3f} frame⁻¹")
 print(f"Dominant period: {1/dominant_freq:.1f} frames")
 ```
 
-Configuration
+## Configuration
 
-Configuration Files
+### Configuration Files
 
 Create JSON configuration files in configs/:
 
@@ -447,7 +447,7 @@ Create JSON configuration files in configs/:
 }
 ```
 
-Environment Configuration
+## Environment Configuration
 
 ```python
 import os
@@ -461,9 +461,9 @@ config = KaleidoscopeConfig.from_env()
 # Automatically reads from environment
 ```
 
-Command Line Interface
+## Command Line Interface
 
-Complete Workflow
+### Complete Workflow
 
 ```bash
 # 1. Setup project
@@ -485,7 +485,7 @@ jupyter notebook notebooks/analysis.ipynb
 ./sync_overleaf.sh
 ```
 
-Utility Scripts
+## Utility Scripts
 
 ```bash
 # Generate paper figures only
@@ -501,9 +501,9 @@ python -m pytest tests/
 pdoc src --html --output-dir docs/api
 ```
 
-Examples
+## Examples
 
-Example 1: Complete Research Pipeline
+### Example 1: Complete Research Pipeline
 
 ```python
 from src.kaleidoscope import generate_paper_figures
@@ -529,7 +529,7 @@ print(f"Δθ range: {metadata['frames_data'][0]['phase_diff']:.3f} - {metadata['
 print(f"Symmetry: {metadata['symmetry_folds']}-fold")
 ```
 
-Example 2: Interactive Exploration
+### Example 2: Interactive Exploration
 
 ```python
 from src.kaleidoscope import BinocularKaleidoscope
@@ -558,7 +558,7 @@ def explore_phases(left_phase, right_phase, style):
     print(f"  Coherence: {np.cos(right_phase-left_phase):.2f}")
 ```
 
-Example 3: Batch Processing
+### Example 3: Batch Processing
 
 ```python
 from src.generate_sequences import SequenceGenerator
@@ -608,9 +608,9 @@ results_df = pd.DataFrame(results)
 print(results_df)
 ```
 
-Advanced Usage
+## Advanced Usage
 
-Custom Symmetry Operations
+### Custom Symmetry Operations
 
 ```python
 class CustomKaleidoscope(BinocularKaleidoscope):
@@ -644,7 +644,7 @@ class CustomKaleidoscope(BinocularKaleidoscope):
         return np.array(symmetric_points)
 ```
 
-Real-time Animation
+### Real-time Animation
 
 ```python
 import matplotlib.animation as animation
@@ -668,7 +668,7 @@ plt.show()
 ani.save('real_time_animation.mp4', writer='ffmpeg', fps=10)
 ```
 
-Integration with Other Libraries
+### Integration with Other Libraries
 
 ```python
 import plotly.graph_objects as go
@@ -710,9 +710,9 @@ fig.update_layout(
 fig.show()
 ```
 
-Troubleshooting
+## Troubleshooting
 
-Common Issues
+### Common Issues
 
 1. Missing Dependencies
 
@@ -762,9 +762,9 @@ kaleido.left_colors = [(0.2, 0.4, 0.8) for _ in range(9)]  # Blue
 kaleido.right_colors = [(0.8, 0.2, 0.2) for _ in range(9)]  # Red
 ```
 
-Contributing
+## Contributing
 
-Development Setup
+### Development Setup
 
 ```bash
 # Clone repository
@@ -785,22 +785,22 @@ pytest tests/
 pdoc src --html --output-dir docs/api
 ```
 
-Adding New Features
+### Adding New Features
 
 1. Create feature branch
 2. Add tests in tests/
 3. Update documentation in docs/
 4. Submit pull request
 
-Citation
+## Citation
 
 If using this framework in research:
 
 ```bibtex
-@software{kaleidoscope_logic_2024,
+@software{kaleidoscope_logic_2026,
   title = {Binocular Kaleidoscope Logic Framework},
-  author = {Research Team},
-  year = {2024},
+  author = {yusdesign research team},
+  year = {2026},
   url = {https://github.com/yusdesign/kaleidoscope-logic},
   version = {1.0.0}
 }
