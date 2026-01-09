@@ -1,4 +1,4 @@
-🚧 UNDER CONSTRUCTION 🚧
+🚧 UNDER CONSTRUCTION 🚧 ( Yet you can read BKL.pdf )
 
 # Binocular Kaleidoscope Logic: 
 A Computational Model of Constructed Reality
