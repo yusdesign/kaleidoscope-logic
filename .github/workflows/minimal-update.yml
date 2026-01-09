@@ -1,0 +1,23 @@
+# .github/workflows/minimal-update.yml
+name: Minimal Date Update
+
+on: [workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        date > date.txt
+        git add date.txt
+        git commit -m "Test: add date file"
+        git push
