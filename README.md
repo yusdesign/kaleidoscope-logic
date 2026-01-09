@@ -168,21 +168,17 @@ The complete research paper is available in the paper/ directory.
 
 🎨 Visual Gallery
 
-Baseline State
+Baseline State  
+![Baseline State](paper/figures/kaleidoscope_clean.png)  
 
-![Baseline State](paper/figures/kaleidoscope_clean.png)
-
-
-System Architecture
-
-![System Architecture](paper/figures/kaleidoscope_static.png)
+System Architecture  
+![System Architecture](paper/figures/kaleidoscope_static.png)  
 
 Sequence Evolution  
-
-Frame 1, Frame 13, Frame 25  
-paper/figures/exact_sequence/kaleidoscope_frame_00.png  
-paper/figures/exact_sequence/kaleidoscope_frame_12.png  
-paper/figures/exact_sequence/kaleidoscope_frame_24.png  
+![Frame 1](paper/figures/exact_sequence/kaleidoscope_frame_00.png)  
+![Frame 13](paper/figures/exact_sequence/kaleidoscope_frame_12.png)  
+![Frame 24](paper/figures/exact_sequence/kaleidoscope_frame_24.png)  
+  
 
 🤝 Contributing
 
