@@ -212,7 +212,7 @@ MIT License - see LICENSE file for details.
           <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143"">  
         </a>
         <br>
-        <strong>Maintained by yusdesign</strong>
+        <strong>Maintained by @yus</strong>
         <br>
       </td>
       <td align="center" width="50%">
