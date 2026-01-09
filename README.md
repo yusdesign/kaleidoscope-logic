@@ -211,17 +211,11 @@ MIT License - see LICENSE file for details.
         <a href="https://yusdesign.github.io">
           <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143"">  
         </a>
-        <br>
-        <strong>Maintained by @yus</strong>
-        <br>
       </td>
       <td align="center" width="50%">
         <a href="https://chat.deepseek.com">
           <img src="https://cdn.deepseek.com/logo.png" alt="DeepSeek Logo" width="143">  
-        </a>
-        <br>
-        <strong>Powered by DeepSeek</strong>
-        <br>
+        </a>        
       </td>
     </tr>
   </table>
