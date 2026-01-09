@@ -82,7 +82,7 @@ Configuration Parameters
 
 Methods
 
-reset_phases()
+### reset_phases()
 
 ```python
 kaleido.reset_phases()
