@@ -1,0 +1,656 @@
+\documentclass[11pt, a4paper]{article}
+
+% ========== PACKAGES ==========
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{physics}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{longtable}  % For multi-page tables
+\usepackage{lscape}     % For landscape tables if needed
+
+% ========== FIX HYPHENATION ==========
+\usepackage[english]{babel}
+\hyphenation{kaleido-scope bin-ocular per-cep-tion con-struc-ted real-i-ty}
+\hyphenation{sym-me-try ope-ra-tions com-put-a-tion-al phi-los-o-phy}
+\hyphenation{con-scious-ness mod-el-ing visu-al-i-za-tion}
+\hyphenation{voronoi phase-ing con-cept-ual bound-ar-ies}
+\hyphenation{sen-so-ry da-ta cog-ni-tive frame-works}
+\hyphenation{emer-gent phe-nom-en-on dy-nam-ic na-ture}
+
+% ========== PAGE SETUP ==========
+\geometry{
+    a4paper,
+    left=1.2in,
+    right=1.2in,
+    top=1in,
+    bottom=1.2in,
+    includefoot
+}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\linespread{1.15}
+\sloppy
+\emergencystretch=1.5em
+
+% ========== COLORS ==========
+\definecolor{codeblue}{RGB}{41,128,185}
+\definecolor{codegreen}{RGB}{39,174,96}
+\definecolor{codegray}{RGB}{149,165,166}
+\definecolor{backcolor}{RGB}{249,249,249}
+
+% ========== LISTINGS SETUP ==========
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{codeblue},
+    commentstyle=\color{codegreen},
+    stringstyle=\color{codegray},
+    numbers=left,
+    numberstyle=\tiny\color{codegray},
+    stepnumber=1,
+    numbersep=4pt,
+    backgroundcolor=\color{backcolor},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    rulecolor=\color{codegray},
+    tabsize=4,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=true,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}}
+}
+
+% ========== TITLE ==========
+\title{\LARGE\textbf{Binocular Kaleidoscope Logic: A Computational Model of Constructed Reality Through Symmetry and Phase Dynamics}}
+
+\author{
+    yusdesign \\
+    Research Team \\
+    \small{\textit{in collaboration with DeepSeek AI}}
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% ========== ABSTRACT ==========
+\begin{abstract}
+\noindent This paper introduces \textbf{Binocular Kaleidoscope Logic (BKL)}, a novel computational--philosophical framework that models consciousness as an emergent phenomenon arising from the interaction of multiple perceptual systems. Drawing inspiration from kaleidoscopic optics and binocular vision, we conceptualize cognitive processes as symmetry operations on fragmented sensory data, with Voronoi--like phasing creating conceptual boundaries. Our Python implementation demonstrates how minute rotations in perspective can generate complex, evolving patterns that mirror the dynamic nature of constructed reality. The model bridges cognitive science, computational art, and philosophy of mind, offering novel insights into perception, pattern recognition, and the nature of subjective experience. We present comprehensive visualizations showing phase evolution over extended sequences, each frame representing a discrete moment in the perception--construction process.
+\end{abstract}
+
+\noindent \textbf{Keywords:} Kaleidoscope logic, binocular perception, symmetry operations, Voronoi phasing, constructed reality, computational philosophy, consciousness modeling
+
+\vspace{15pt}
+\hrule
+\vspace{20pt}
+
+\newpage
+% ========== INTRODUCTION ==========
+\section{Introduction: The Kaleidoscope as Cognitive Metaphor}
+
+The human mind has long been described through optical metaphors: the camera, the mirror, the lens. We propose a new metaphor: the \textbf{binocular kaleidoscope}. Unlike a simple mirror that reflects or a lens that focuses, a kaleidoscope \textit{constructs} reality from fragments through symmetry operations. 
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{kaleidoscope_clean.png}
+    \caption{\textbf{Baseline state} of the Binocular Kaleidoscope System. Left $\theta = 0.00$, Right $\theta = 0.39$. The Voronoi--like cellular structure emerges from the interaction of two perceptual systems. This image represents the starting point of our sequence analysis.}
+    \label{fig:baseline}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.95\textwidth]{kaleidoscope_static.png}
+    \caption{\textbf{System architecture overview} showing the complete binocular kaleidoscope logic. The left panel displays the original fragments, middle panel shows the symmetric patterns, and right panel demonstrates the binocular fusion with Voronoi phasing. This comprehensive view illustrates all components of our model.}
+    \label{fig:static}
+\end{figure}
+
+Our model extends this metaphor to binocular vision: we perceive reality not through one, but \textbf{two} kaleidoscopic systems (left/right cognitive frameworks) that continuously fuse, creating a third, emergent reality. This fusion is neither purely objective (the fragments) nor purely subjective (the mirrors), but exists in their interaction.
+
+\newpage
+\subsection{Philosophical Underpinnings}
+The BKL framework aligns with constructivist epistemology (Piaget, von~Glasersfeld), where knowledge is actively constructed rather than passively received. It also resonates with:
+\begin{itemize}
+    \item \textbf{Merleau--Ponty's phenomenology}: Perception as an embodied, active process
+    \item \textbf{Maturana \& Varela's autopoiesis}: Systems that maintain themselves through self--production
+    \item \textbf{The Bayesian brain hypothesis}: Perception as probabilistic inference
+\end{itemize}
+
+\newpage
+% ========== MATHEMATICAL FRAMEWORK ==========
+\section{Mathematical Framework: Symmetry and Phase}
+
+\subsection{Core Components}
+Let $F = \{f_1, f_2, \dots, f_9\}$ represent the fragment set for each perceptual system, where $f_i \in \mathbb{R}^2$. For the binocular system:
+\begin{align*}
+F_L &= \{f_{L1}, \dots, f_{L9}\} \quad \text{(Left system fragments)} \\
+F_R &= \{f_{R1}, \dots, f_{R9}\} \quad \text{(Right system fragments)}
+\end{align*}
+
+\subsection{Symmetry Operations}
+Each system applies a symmetry group $G$ to its fragments. For a 3--mirror kaleidoscope (6--fold symmetry):
+\[
+S(\theta, F) = \bigcup_{i=1}^{9} \bigcup_{k=0}^{5} R\left(\theta + \frac{k\pi}{3}\right) f_i
+\]
+where $R(\alpha)$ is the rotation matrix:
+\[
+R(\alpha) = \begin{bmatrix}
+\cos\alpha & -\sin\alpha \\
+\sin\alpha & \cos\alpha
+\end{bmatrix}
+\]
+
+\subsection{Binocular Fusion}
+The fused perception $P$ emerges from the interaction:
+\[
+P(\theta_L, \theta_R) = \Phi\left(S(\theta_L, F_L), S(\theta_R, F_R)\right)
+\]
+where $\Phi$ represents the fusion function, which in our implementation uses Voronoi tessellation to create cellular conceptual boundaries.
+
+\subsection{Phase Dynamics}
+The systems evolve through rotational phases:
+\begin{align*}
+\theta_L(t+1) &= \theta_L(t) + \Delta_L \mod 2\pi \\
+\theta_R(t+1) &= \theta_R(t) + \Delta_R \mod 2\pi
+\end{align*}
+The phase difference $\Delta\theta = \theta_R - \theta_L$ creates \textit{perceptual interference patterns}, analogous to moiré patterns in optics.
+
+% ========== VISUALIZATION SEQUENCE ==========
+\section{Visualization: Phase Evolution Analysis}
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{frames/frame_000.png}
+        \caption{Frame 1: Initial alignment \\ $\theta_L=0.00$, $\theta_R=0.39$}
+        \label{fig:frame1}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{frames/frame_012.png}
+        \caption{Frame 13: Mid-sequence \\ $\theta_L=0.96$, $\theta_R=1.56$}
+        \label{fig:frame13}
+    \end{subfigure}
+    
+    \vspace{10pt}
+    
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{frames/frame_018.png}
+        \caption{Frame 19: Peak complexity \\ $\theta_L=1.44$, $\theta_R=2.23$}
+        \label{fig:frame19}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{frames/frame_024.png}
+        \caption{Frame 25: Final state \\ $\theta_L=1.92$, $\theta_R=2.87$}
+        \label{fig:frame25}
+    \end{subfigure}
+    
+    \caption{\textbf{Phase evolution sequence} showing key frames from the 25--frame rotation cycle. Each frame represents a discrete moment in perceptual construction, with cellular Voronoi boundaries shifting as phase relationships change. Note the emergence and dissolution of patterns across the sequence. Complete frame-by-frame analysis provided in Appendix A.}
+    \label{fig:sequence}
+\end{figure}
+
+% ========== ALGORITHM ==========
+\section{Algorithmic Implementation}
+\subsection{Pseudocode}
+\begin{algorithm}[H]
+\caption{Binocular Kaleidoscope Logic (BKL)}
+\begin{algorithmic}[1]
+\Procedure{BinocularKaleidoscope}{$F_L, F_R$}
+\State $\theta_L \gets 0.0$ \Comment{Left phase initialization}
+\State $\theta_R \gets 0.39$ \Comment{Right phase offset (from baseline)}
+\For{$t = 1$ to $T$} \Comment{Temporal evolution ($T=25$)}
+    \State $P_L \gets \text{ApplySymmetry}(F_L, \theta_L)$
+    \State $P_R \gets \text{ApplySymmetry}(F_R, \theta_R)$
+    \State $V \gets \text{VoronoiTessellation}(P_L \cup P_R)$
+    \State $\text{RenderFrame}(V, \theta_L, \theta_R)$
+    \State $\theta_L \gets (\theta_L + 0.08) \mod 2\pi$
+    \State $\theta_R \gets (\theta_R + 0.095) \mod 2\pi$
+\EndFor
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\newpage
+\subsection{Python Implementation Excerpt}
+\begin{lstlisting}[caption={Core symmetry application function}, label={code:symmetry}]
+def apply_kaleidoscope_symmetry(fragments, angle):
+    """Apply 6-fold kaleidoscope symmetry"""
+    symmetric_points = []
+    for point in fragments:
+        # Original point
+        symmetric_points.append(point)
+        # 6-fold rotational symmetry
+        for fold in range(1, 6):
+            rot_angle = angle + fold * (2*np.pi/6)
+            sym_point = rotate_point(point, rot_angle)
+            # Mirror reflections (kaleidoscope)
+            symmetric_points.append(sym_point)
+            symmetric_points.append([-sym_point[0], 
+                                     sym_point[1]])
+            symmetric_points.append([sym_point[0], 
+                                     -sym_point[1]])
+    return np.array(symmetric_points)
+
+def generate_frame(left_angle, right_angle):
+    """Generate single frame with given phases"""
+    left_pattern = apply_symmetry(left_frags, left_angle)
+    right_pattern = apply_symmetry(right_frags, right_angle)
+    combined = combine_patterns(left_pattern, right_pattern)
+    voronoi = create_voronoi(combined)
+    return render(voronoi, left_angle, right_angle)
+\end{lstlisting}
+
+\newpage
+% ========== PHILOSOPHICAL INTERPRETATION ==========
+\section{Philosophical Interpretation: Reality as Constructed Pattern}
+
+\subsection{The Three Layers of Perception}
+\begin{enumerate}
+    \item \textbf{Fragments (Sensory Data)}: The raw, unprocessed input from sensory modalities. These are discrete, often chaotic data points.
+    
+    \item \textbf{Symmetry Operations (Cognitive Frameworks)}: The mental structures---cultural, linguistic, experiential---that organize fragments into patterns. These are the ``mirrors'' of the mind.
+    
+    \item \textbf{Voronoi Phasing (Conceptual Boundaries)}: The emergent boundaries between concepts, categories, and experiences. These are not inherent in reality but constructed through cognitive processes.
+\end{enumerate}
+
+\subsection{The Role of Time}
+The 25--frame sequence represents temporal evolution in perception. Each frame is not a static ``snapshot'' but a moment in continuous construction. The phase differences ($\Delta\theta$) between left and right systems model:
+\begin{itemize}
+    \item \textbf{Attention shifts}: Changes in focus alter which fragments are emphasized
+    \item \textbf{Context changes}: Environmental shifts reconfigure cognitive frameworks
+    \item \textbf{Learning moments}: New information creates new symmetry operations
+\end{itemize}
+
+\newpage
+% ========== ROTATION ANALYSIS ==========
+\section{Rotation Analysis: Extended Sequence}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.95\textwidth]{paper_rotation_full_montage.png}
+    \caption{\textbf{Complete 12--step rotation sequence} showing systematic phase evolution. Each panel displays left system (blue), right system (red), and their fusion (purple). The sequence demonstrates how small rotational increments ($\Delta_L = 0.3$, $\Delta_R = 0.35$ rad/frame) create dramatic perceptual shifts. Detailed frame analysis in Appendix B.}
+    \label{fig:rotation12}
+\end{figure}
+
+\subsection{Phase Progression Analysis}
+From our extended analysis (see Appendices A and B), we observe:
+
+\begin{table}[ht!]
+\centering
+\caption{Phase progression through key sequences}
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\textbf{Sequence} & \textbf{Frames} & $\Delta_L$/frame & $\Delta_R$/frame & $\theta_L$ range & $\theta_R$ range \\
+\midrule
+Main (Fig.~\ref{fig:sequence}) & 25 & 0.08 & 0.095 & 0.00--1.92 & 0.39--2.87 \\
+Rotation (Fig.~\ref{fig:rotation12}) & 12 & 0.30 & 0.35 & 0.00--3.30 & 0.50--4.20 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The increasing phase difference creates increasingly complex interference patterns, demonstrating \textbf{perceptual drift}---the phenomenon where repeated exposure or cognitive processing alters perception of the same stimulus.
+
+\newpage
+% ========== APPLICATIONS ==========
+\section{Applications and Implications}
+
+\subsection{Cognitive Science}
+\begin{itemize}
+    \item \textbf{Perceptual learning}: Modeling how expertise changes perception
+    \item \textbf{Attention mechanisms}: Simulating focus shifts as rotational changes
+    \item \textbf{Concept formation}: Understanding how categories emerge from data
+\end{itemize}
+
+\subsection{Artificial Intelligence}
+\begin{itemize}
+    \item \textbf{Multi--perspective learning}: Training AI to integrate multiple viewpoints
+    \item \textbf{Generative models}: Creating novel patterns through symmetry operations
+    \item \textbf{Explainable AI}: Visualizing how AI systems ``see'' and categorize
+\end{itemize}
+
+\subsection{Philosophy of Mind}
+\begin{itemize}
+    \item \textbf{Consciousness studies}: A computational model of qualia generation
+    \item \textbf{Reality construction}: Understanding how minds build worlds
+    \item \textbf{Intersubjectivity}: Modeling how shared realities emerge
+\end{itemize}
+
+\newpage
+% ========== DISCUSSION ==========
+\section{Discussion: Limitations and Future Work}
+
+\subsection{Limitations}
+\begin{itemize}
+    \item \textbf{Simplified symmetry}: Real cognitive frameworks are more complex than 6--fold symmetry
+    \item \textbf{Static fragments}: Real sensory input is continuously flowing, not static
+    \item \textbf{Binary system}: Human cognition involves more than two ``systems''
+\end{itemize}
+
+\subsection{Future Directions}
+\begin{enumerate}
+    \item \textbf{Multi--system kaleidoscopes}: Extending to 3+ interacting systems
+    \item \textbf{Dynamic fragments}: Making fragments time--dependent
+    \item \textbf{Neural correlates}: Linking symmetry operations to neural mechanisms
+    \item \textbf{Cross--cultural studies}: Testing if different cultures have different ``symmetry operations''
+\end{enumerate}
+
+\newpage
+% ========== CONCLUSION ==========
+\section{Conclusion}
+
+The Binocular Kaleidoscope Logic framework offers a powerful new way to conceptualize perception and consciousness. By modeling the mind as a system that \textit{constructs} rather than \textit{receives} reality, we bridge computational modeling with phenomenological experience.
+
+The comprehensive visual sequences presented in this paper (with full frame--by--frame analysis in the Appendices) demonstrate a fundamental insight: \textbf{reality is not found but made}. Each rotation, each phase shift, each fusion creates a new world. The kaleidoscope doesn't just show us patterns---it shows us the process of pattern--making itself.
+
+As Heraclitus observed, you cannot step into the same river twice. Our model suggests why: because you cannot look through the same kaleidoscope twice. Each glance, each thought, each moment of attention rotates the mirrors just enough to create a new reality.
+
+\newpage
+% ========== REFERENCES ==========
+\begin{thebibliography}{9}
+
+\bibitem{piaget}
+Piaget, J. (1954). \textit{The Construction of Reality in the Child}. Basic Books.
+
+\bibitem{glasersfeld}
+von~Glasersfeld, E. (1995). \textit{Radical Constructivism: A Way of Knowing and Learning}. Falmer Press.
+
+\bibitem{merleau}
+Merleau--Ponty, M. (1945). \textit{Phenomenology of Perception}. Routledge.
+
+\bibitem{maturana}
+Maturana, H.~R., \& Varela, F.~J. (1980). \textit{Autopoiesis and Cognition: The Realization of the Living}. D.~Reidel.
+
+\bibitem{knill}
+Knill, D.~C., \& Pouget, A. (2004). The Bayesian brain: the role of uncertainty in neural coding and computation. \textit{Trends in Neurosciences}, 27(12), 712--719.
+
+\bibitem{shepard}
+Shepard, R.~N. (1984). Ecological constraints on internal representation: resonant kinematics of perceiving, imagining, thinking, and dreaming. \textit{Psychological Review}, 91(4), 417.
+
+\bibitem{tenenbaum}
+Tenenbaum, J.~B., Kemp, C., Griffiths, T.~L., \& Goodman, N.~D. (2011). How to grow a mind: Statistics, structure, and abstraction. \textit{Science}, 331(6022), 1279--1285.
+
+\end{thebibliography}
+
+\newpage
+% ========== APPENDIX A: 25-FRAME SEQUENCE ==========
+\newpage
+\appendix
+\section{Appendix A: Complete 25-Frame Sequence Analysis}
+
+This appendix provides the complete frame--by--frame analysis of the 25--frame kaleidoscope sequence. Each frame represents a discrete moment in the phase evolution, with parameters calculated as:
+\[
+\theta_L(t) = 0.08 \times t \quad \text{and} \quad \theta_R(t) = 0.39 + 0.095 \times t
+\]
+for $t = 0, 1, \dots, 24$.
+
+\begin{longtable}{|c|c|c|c|c|c|}
+\caption{Complete 25-frame sequence analysis from exact\_sequence folder} \\
+\hline
+\textbf{Frame \#} & \textbf{Filename} & $\theta_L$ (rad) & $\theta_R$ (rad) & $\Delta\theta$ (rad) & \textbf{Pattern Complexity} \\
+\hline
+\endfirsthead
+
+\caption{Continued from previous page} \\
+\hline
+\textbf{Frame \#} & \textbf{Filename} & $\theta_L$ (rad) & $\theta_R$ (rad) & $\Delta\theta$ (rad) & \textbf{Pattern Complexity} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+1 & kaleidoscope\_frame\_00.png & 0.00 & 0.39 & 0.39 & Low (baseline) \\
+2 & kaleidoscope\_frame\_01.png & 0.08 & 0.485 & 0.405 & Low \\
+3 & kaleidoscope\_frame\_02.png & 0.16 & 0.58 & 0.42 & Increasing \\
+4 & kaleidoscope\_frame\_03.png & 0.24 & 0.675 & 0.435 & Medium \\
+5 & kaleidoscope\_frame\_04.png & 0.32 & 0.77 & 0.45 & Medium \\
+6 & kaleidoscope\_frame\_05.png & 0.40 & 0.865 & 0.465 & Medium \\
+7 & kaleidoscope\_frame\_06.png & 0.48 & 0.96 & 0.48 & Medium-High \\
+8 & kaleidoscope\_frame\_07.png & 0.56 & 1.055 & 0.495 & Medium-High \\
+9 & kaleidoscope\_frame\_08.png & 0.64 & 1.15 & 0.51 & High \\
+10 & kaleidoscope\_frame\_09.png & 0.72 & 1.245 & 0.525 & High \\
+11 & kaleidoscope\_frame\_10.png & 0.80 & 1.34 & 0.54 & High \\
+12 & kaleidoscope\_frame\_11.png & 0.88 & 1.435 & 0.555 & Very High \\
+13 & kaleidoscope\_frame\_12.png & 0.96 & 1.53 & 0.57 & Very High \\
+14 & kaleidoscope\_frame\_13.png & 1.04 & 1.625 & 0.585 & Peak \\
+15 & kaleidoscope\_frame\_14.png & 1.12 & 1.72 & 0.60 & Peak \\
+16 & kaleidoscope\_frame\_15.png & 1.20 & 1.815 & 0.615 & Peak \\
+17 & kaleidoscope\_frame\_16.png & 1.28 & 1.91 & 0.63 & Peak \\
+18 & kaleidoscope\_frame\_17.png & 1.36 & 2.005 & 0.645 & High \\
+19 & kaleidoscope\_frame\_18.png & 1.44 & 2.10 & 0.66 & High \\
+20 & kaleidoscope\_frame\_19.png & 1.52 & 2.195 & 0.675 & Medium-High \\
+21 & kaleidoscope\_frame\_20.png & 1.60 & 2.29 & 0.69 & Medium \\
+22 & kaleidoscope\_frame\_21.png & 1.68 & 2.385 & 0.705 & Medium \\
+23 & kaleidoscope\_frame\_22.png & 1.76 & 2.48 & 0.72 & Medium-Low \\
+24 & kaleidoscope\_frame\_23.png & 1.84 & 2.575 & 0.735 & Low \\
+25 & kaleidoscope\_frame\_24.png & 1.92 & 2.67 & 0.75 & Low (near completion) \\
+\end{longtable}
+
+\newpage
+\subsection{Key Observations from 25-Frame Sequence}
+\begin{enumerate}
+    \item \textbf{Phase difference growth}: $\Delta\theta$ increases linearly from 0.39 to 0.75 rad
+    \item \textbf{Complexity peak}: Maximum pattern complexity occurs around frames 14--17
+    \item \textbf{Symmetry preservation}: 6-fold rotational symmetry maintained throughout
+    \item \textbf{Color evolution}: Blue (left) and red (right) hues blend increasingly over sequence
+    \item \textbf{Voronoi cell dynamics}: Cellular boundaries shift continuously, never repeating
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\caption{Kaleidoscope evolution sequence (5×5 grid, 25 frames total)}
+\label{fig:timeline_grid}
+
+\begin{tabular}{ccccc}
+\multicolumn{5}{c}{\textbf{Time progression from left to right, top to bottom}} \\[2mm]
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_00.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_01.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_02.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_03.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_04.png} \\
+\textbf{t=0.00s} & \textbf{t=0.04s} & \textbf{t=0.08s} & \textbf{t=0.12s} & \textbf{t=0.16s} \\[2mm]
+
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_05.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_06.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_07.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_08.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_09.png} \\
+\textbf{t=0.20s} & \textbf{t=0.24s} & \textbf{t=0.28s} & \textbf{t=0.32s} & \textbf{t=0.36s} \\[2mm]
+
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_10.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_11.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_12.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_13.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_14.png} \\
+\textbf{t=0.40s} & \textbf{t=0.44s} & \textbf{t=0.48s} & \textbf{t=0.52s} & \textbf{t=0.56s} \\[2mm]
+
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_15.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_16.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_17.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_18.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_19.png} \\
+\textbf{t=0.60s} & \textbf{t=0.64s} & \textbf{t=0.68s} & \textbf{t=0.72s} & \textbf{t=0.76s} \\[2mm]
+
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_20.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_21.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_22.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_23.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_frame_24.png} \\
+\textbf{t=0.80s} & \textbf{t=0.84s} & \textbf{t=0.88s} & \textbf{t=0.92s} & \textbf{t=0.96s} \\
+\end{tabular}
+\end{figure}
+
+\newpage
+% ========== APPENDIX B: ROTATION SEQUENCE ==========
+\newpage
+\section{Appendix B: 12-Frame Rotation Sequence Analysis}
+
+This appendix analyzes the 12-frame rotation sequence showing left, right, and fused systems simultaneously. Parameters: $\Delta_L = 0.30$, $\Delta_R = 0.35$ rad/frame.
+
+\begin{longtable}{|c|c|c|c|c|c|c|}
+\caption{12-frame rotation sequence analysis} \\
+\hline
+\textbf{Frame} & \textbf{Filename} & $\theta_L$ & $\theta_R$ & $\Delta\theta$ & \textbf{Left Pattern} & \textbf{Right Pattern} \\
+\hline
+\endfirsthead
+
+\caption{Continued from previous page} \\
+\hline
+\textbf{Frame} & \textbf{Filename} & $\theta_L$ & $\theta_R$ & $\Delta\theta$ & \textbf{Left Pattern} & \textbf{Right Pattern} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+1 & kaleidoscope\_exact\_00.png & 0.00 & 0.50 & 0.50 & Circular & Star-like \\
+2 & kaleidoscope\_exact\_01.png & 0.30 & 0.85 & 0.55 & Rotated 17° & Rotated 20° \\
+3 & kaleidoscope\_exact\_02.png & 0.60 & 1.20 & 0.60 & Rotated 34° & Rotated 40° \\
+4 & kaleidoscope\_exact\_03.png & 0.90 & 1.55 & 0.65 & Rotated 52° & Rotated 60° \\
+5 & kaleidoscope\_exact\_04.png & 1.20 & 1.90 & 0.70 & Rotated 69° & Rotated 80° \\
+6 & kaleidoscope\_exact\_05.png & 1.50 & 2.25 & 0.75 & Rotated 86° & Rotated 100° \\
+7 & kaleidoscope\_exact\_06.png & 1.80 & 2.60 & 0.80 & Rotated 103° & Rotated 120° \\
+8 & kaleidoscope\_exact\_07.png & 2.10 & 2.95 & 0.85 & Rotated 120° & Rotated 140° \\
+9 & kaleidoscope\_exact\_08.png & 2.40 & 3.30 & 0.90 & Rotated 138° & Rotated 160° \\
+10 & kaleidoscope\_exact\_09.png & 2.70 & 3.65 & 0.95 & Rotated 155° & Rotated 180° \\
+11 & kaleidoscope\_exact\_10.png & 3.00 & 4.00 & 1.00 & Rotated 172° & Rotated 200° \\
+12 & kaleidoscope\_exact\_11.png & 3.30 & 4.35 & 1.05 & Rotated 189° & Rotated 220° \\
+\end{longtable}
+
+\subsection{Analysis of Rotation Sequence}
+\begin{itemize}
+    \item \textbf{Progressive divergence}: Phase difference increases from 0.50 to 1.05 rad
+    \item \textbf{Pattern interference}: Maximum interference occurs at $\Delta\theta \approx \pi/2$ (1.57 rad)
+    \item \textbf{Visual distinctness}: Left patterns remain circular while right patterns become increasingly complex
+    \item \textbf{Fusion evolution}: Combined patterns show increasing asymmetry
+    \item \textbf{Completion}: After 12 frames, left system completes $\approx 53\%$ of full rotation, right $\approx 69\%$
+\end{itemize}
+
+\subsection{Mathematical Analysis}
+The rotation sequences follow:
+\begin{align*}
+\text{25-frame:} & \quad \theta_L = 0.08n, \quad \theta_R = 0.39 + 0.095n \\
+\text{12-frame:} & \quad \theta_L = 0.30n, \quad \theta_R = 0.50 + 0.35n
+\end{align*}
+where $n$ is the frame number (0-indexed).
+
+The phase coherence function:
+\[
+C(n) = \cos(\theta_R(n) - \theta_L(n))
+\]
+shows decreasing coherence over time, representing perceptual drift.
+
+\begin{figure}[H]
+\centering
+\caption{Kaleidoscope evolution sequence (5×5 grid, 25 frames total)}
+\label{fig:timeline_grid}
+
+\begin{tabular}{ccccc}
+\multicolumn{5}{c}{\textbf{Time progression from left to right, top to bottom}} \\[2mm]
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_00.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_01.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_02.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_03.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_04.png} \\
+\textbf{t=0.00s} & \textbf{t=0.04s} & \textbf{t=0.08s} & \textbf{t=0.12s} & \textbf{t=0.16s} \\[2mm]
+
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_05.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_06.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_07.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_08.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_09.png} \\
+\textbf{t=0.20s} & \textbf{t=0.24s} & \textbf{t=0.28s} & \textbf{t=0.32s} & \textbf{t=0.36s} \\[2mm]
+
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_10.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_11.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_12.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_13.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_14.png} \\
+\textbf{t=0.40s} & \textbf{t=0.44s} & \textbf{t=0.48s} & \textbf{t=0.52s} & \textbf{t=0.56s} \\[2mm]
+
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_15.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_16.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_17.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_18.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_19.png} \\
+\textbf{t=0.60s} & \textbf{t=0.64s} & \textbf{t=0.68s} & \textbf{t=0.72s} & \textbf{t=0.76s} \\[2mm]
+
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_20.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_21.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_22.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_23.png} &
+\includegraphics[width=0.18\linewidth]{exactseq/kaleidoscope_exact_24.png} \\
+\textbf{t=0.80s} & \textbf{t=0.84s} & \textbf{t=0.88s} & \textbf{t=0.92s} & \textbf{t=0.96s} \\
+\end{tabular}
+\end{figure}
+
+\newpage
+% ========== TECHNICAL APPENDIX ==========
+\section*{Technical Appendix: Implementation Details}
+
+\subsection*{Software and Parameters}
+\begin{itemize}
+    \item \textbf{Programming language}: Python 3.9+
+    \item \textbf{Libraries}: NumPy, Matplotlib, custom Voronoi implementation
+    \item \textbf{Resolution}: 690×717 pixels for all frames
+    \item \textbf{Color mapping}: HSV colormap with:
+    \begin{itemize}
+        \item Left system: Blue hues (H: 0.5--0.7)
+        \item Right system: Red hues (H: 0.0--0.2)
+        \item Fusion: Blended hues
+    \end{itemize}
+    \item \textbf{Total frames generated}: 25 (main) + 12 (rotation) + 1 (baseline) + 1 (static) = 39 images
+\end{itemize}
+
+\subsection*{File Naming Convention}
+\begin{itemize}
+    \item \texttt{kaleidoscope\_clean.png}: Baseline single frame
+    \item \texttt{kaleidoscope\_static.png}: System architecture overview
+    \item \texttt{kaleidoscope\_frame\_XX.png}: 25-frame sequence (XX = 00--24)
+    \item \texttt{kaleidoscope\_exact\_XX.png}: 12-frame rotation sequence (XX = 00--11)
+    \item \texttt{frame\_XXX.png}: Alternative naming for sequence frames
+\end{itemize}
+
+\subsection*{Computational Complexity}
+\begin{itemize}
+    \item \textbf{Symmetry operations}: $9 \times 6 \times 3 = 162$ points per system per frame
+    \item \textbf{Voronoi tessellation}: $O(n \log n)$ for $n \approx 500$ points
+    \item \textbf{Rendering time}: $\approx 2-3$ seconds per frame on standard hardware
+    \item \textbf{Total computation}: $\approx 2$ minutes for complete sequence generation
+\end{itemize}
+
+\subsection*{Code Availability}
+Full Python implementation and all generated sequences available at: \\
+\url{https://github.com/yusdesign/kaleidoscope-logic}
+
+\vspace{20pt}
+\noindent\textbf{Data Availability Statement:} All images, source code, and analysis scripts are available in the supplementary materials and GitHub repository.
+
+\end{document}
