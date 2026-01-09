@@ -205,7 +205,7 @@ MIT License - see LICENSE file for details.
 ### Connect With Us
 
 <div>
-  <table align="center" width="100%">
+  <table align="center" width="100%" border="0">
     <tr>
       <td align="center" width="50%" border="0">
         <a href="https://yusdesign.github.io">
