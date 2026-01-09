@@ -1,4 +1,4 @@
-🚧 UNDER CONSTRUCTION 🚧 ( Yet you can read BKL.pdf )
+🚧 UNDER CONSTRUCTION 🚧 ( Yet you can read BKL.pdf ) 📅 `DATE`
 
 # Binocular Kaleidoscope Logic: 
 A Computational Model of Constructed Reality
