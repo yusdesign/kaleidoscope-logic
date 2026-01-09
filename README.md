@@ -202,4 +202,50 @@ MIT License - see LICENSE file for details.
 
 ---
 
+## 📍 Connect With Us
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <a href="https://yusdesign.github.io">
+          <img src="[yusdesign](https://github.com/yus/yus.github.io/blob/master/images/yus143.png)" alt="yusdesign, L" width="100" style="border-radius: 10px;">
+        </a>
+        <br>
+        <strong>yus/yusdesign</strong>
+        <br>
+        [![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?logo=github)](https://yusdesign.github.io)
+        [![Website](https://img.shields.io/badge/Website-Visit-green?logo=globe)](https://yusdesign.github.io)
+      </td>
+      <td align="center" width="50%">
+        <a href="https://deepseek.com">
+          <img src="https://seeklogo.com/images/D/deepseek-logo-81C3303F26-seeklogo.com.png" alt="DeepSeek Logo" width="100">
+        </a>
+        <br>
+        <strong>Powered by DeepSeek</strong>
+        <br>
+        [![DeepSeek](https://img.shields.io/badge/DeepSeek-AI-purple?logo=ai)](https://deepseek.com)
+        [![Chat](https://img.shields.io/badge/Chat_with_AI-8A2BE2)](https://chat.deepseek.com)
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  
+  Made with ❤️ using [Markdown](https://www.markdownguide.org/) | 
+  Last updated: `DATE`
+  
+  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) | 
+  [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md)
+
+</div>
+
+<!-- Optional: Add a separator line -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="Divider" width="100%">
+
+---
+
 "Reality is not found but made. Each rotation, each phase shift, each fusion creates a new world."
+
+---
