@@ -170,11 +170,12 @@ The complete research paper is available in the paper/ directory.
 
 Baseline State
 
-paper/figures/kaleidoscope_clean.png
+![Baseline State](paper/figures/kaleidoscope_clean.png)
+
 
 System Architecture
 
-paper/figures/kaleidoscope_static.png
+![System Architecture](paper/figures/kaleidoscope_static.png)
 
 Sequence Evolution  
 
