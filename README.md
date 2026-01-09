@@ -212,14 +212,13 @@ MIT License - see LICENSE file for details.
 
 ### 🚀 Technologies
 
-[![yusdesign](https://img.shields.io/badge/yusdesign-kscope-orange)](https://yusdesign.github.io/kaleidoscope-logic)
-[![DeepSeek](https://img.shields.io/badge/Powered_by-DeepSeek-purple)](https://deepseek.com)
-
 Made with ❤️ using [Markdown](https://www.markdownguide.org/)  
 Last updated: `2026-01-09` 📅  
  
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md)  
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md)
+[![yusdesign](https://img.shields.io/badge/yusdesign-kscope-orange)](https://yusdesign.github.io/kaleidoscope-logic)
+[![DeepSeek](https://img.shields.io/badge/Powered_by-DeepSeek-purple)](https://deepseek.com)
 
 ---
 
