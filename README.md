@@ -175,9 +175,9 @@ System Architecture
 ![System Architecture](paper/figures/kaleidoscope_static.png)  
 
 Sequence Evolution  
-![Frame 1](paper/figures/exact_sequence/kaleidoscope_frame_00.png)  
-![Frame 13](paper/figures/exact_sequence/kaleidoscope_frame_12.png)  
-![Frame 24](paper/figures/exact_sequence/kaleidoscope_frame_24.png)  
+![Frame 1](paper/figures/exactseq/kaleidoscope_frame_00.png)  
+![Frame 13](paper/figures/exactseq/kaleidoscope_frame_12.png)  
+![Frame 24](paper/figures/exactseq/kaleidoscope_frame_24.png)  
   
 
 🤝 Contributing
