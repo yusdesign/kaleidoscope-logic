@@ -204,24 +204,24 @@ MIT License - see LICENSE file for details.
 
 ## 📍 Connect With Us
 
-<div align="center">
+<div align="left">
   <table>
     <tr>
-      <td align="center" width="100%">
+      <td align="center" width="50%">
         <a href="https://yusdesign.github.io">
           <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143"">  
         </a>
       </td>
-      <td align="center" width="100%">
+      <td align="center" width="50%">
         <a href="https://chat.deepseek.com">
-          <img src="https://cdn.deepseek.com/logo.png" alt="DeepSeek Logo" width="143">  
+          <img src="https://cdn.deepseek.com/logo.png" alt="DeepSeek Logo" width="165">  
         </a>        
       </td>
     </tr>
   </table>
 </div>
 
-<div align="center">
+<div align="left">
   
   Made with ❤️ using [Markdown](https://www.markdownguide.org/)  
   Last updated: `DATE`  
@@ -231,7 +231,6 @@ MIT License - see LICENSE file for details.
 
 </div>
 
-<!-- Optional: Add a separator line -->
 ---
 
 "Reality is not found but made. Each rotation, each phase shift, each fusion creates a new world."
