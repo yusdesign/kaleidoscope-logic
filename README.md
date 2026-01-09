@@ -209,12 +209,12 @@ MIT License - see LICENSE file for details.
     <tr>
       <td align="center" width="50%">
         <a href="https://yusdesign.github.io">
-          <img src="https://yus.github.io/blob/images/yus143.png" alt="yusdesign, L" width="143"">  
+          <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143"">  
         </a>
         <br>
         <strong>yus/yusdesign</strong>
         <br>
-        [![GitHub](https://yusdesign.github.io)](https://yus.github.io/blob/images/yus143.png)  
+        [![GitHub](https://yusdesign.github.io)](https://yus.github.io/images/yus143.png)  
       </td>
       <td align="center" width="50%">
         <a href="https://deepseek.com">
