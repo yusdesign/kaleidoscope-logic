@@ -1,4 +1,4 @@
-🚧 UNDER CONSTRUCTION 🚧 ( Yet you can read BKL.pdf ) 📅 `DATE`
+🚧 UNDER CONSTRUCTION 🚧 ( Yet you can read BKL.pdf )  
 
 # Binocular Kaleidoscope Logic: 
 A Computational Model of Constructed Reality
@@ -224,7 +224,7 @@ MIT License - see LICENSE file for details.
 <div align="left">
   
   Made with ❤️ using [Markdown](https://www.markdownguide.org/)  
-  Last updated: `2026-01-09`  
+  Last updated: `2026-01-09` 📅  
   
   [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
   [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md)  
