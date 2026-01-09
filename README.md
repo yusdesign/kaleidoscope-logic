@@ -202,7 +202,7 @@ MIT License - see LICENSE file for details.
 
 ---
 
-## 📍 Connect With Us
+### Connect With Us
 
 <div>
   <table align="center" width="100%">
