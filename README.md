@@ -1,1 +1,1 @@
-# kaleidoscope-logic
+# Binocular Kaleidoscope Logic Research
