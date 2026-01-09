@@ -209,7 +209,7 @@ MIT License - see LICENSE file for details.
     <tr border="0">
       <td align="center" width="50%" border="0">
         <a href="https://yusdesign.github.io">
-          <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143"">  
+          <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143">  
         </a>
       </td>
       <td align="center" width="50%" border="0">
