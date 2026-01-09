@@ -178,6 +178,9 @@ Sequence Evolution
 ![Frame 1](paper/figures/exactseq/kaleidoscope_frame_00.png)  
 ![Frame 13](paper/figures/exactseq/kaleidoscope_frame_12.png)  
 ![Frame 24](paper/figures/exactseq/kaleidoscope_frame_24.png)  
+
+Rotation Sequense
+![Rotation Sequense](paper/figures/rotation_sequence.png)  
   
 
 🤝 Contributing
