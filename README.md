@@ -119,20 +119,17 @@ where n = 0, 1, ..., 24
 
 The Three Layers of Perception
 
-1. Fragments - Raw sensory data
-2. Symmetry Operations - Cognitive frameworks (cultural, linguistic, experiential)
-3. Voronoi Phasing - Emergent conceptual boundaries
+1. Fragments - Raw sensory data  
+2. Symmetry Operations - Cognitive frameworks (cultural, linguistic, experiential)  
+3. Voronoi Phasing - Emergent conceptual boundaries  
 
 
 Key Philosophical References
 
-· Constructivist epistemology (Piaget, von Glasersfeld)
-
-· Phenomenology of perception (Merleau-Ponty)
-
-· Autopoiesis (Maturana & Varela)
-
-· Bayesian brain hypothesis
+· Constructivist epistemology (Piaget, von Glasersfeld)  
+· Phenomenology of perception (Merleau-Ponty)  
+· Autopoiesis (Maturana & Varela)  
+· Bayesian brain hypothesis  
 
 
 🔬 Scientific Applications
@@ -179,12 +176,12 @@ System Architecture
 
 paper/figures/kaleidoscope_static.png
 
-Sequence Evolution
+Sequence Evolution  
 
-Frame 1 Frame 13 Frame 25
-paper/figures/exact_sequence/kaleidoscope_frame_00.png 
-paper/figures/exact_sequence/kaleidoscope_frame_12.png 
-paper/figures/exact_sequence/kaleidoscope_frame_24.png
+Frame 1, Frame 13, Frame 25
+paper/figures/exact_sequence/kaleidoscope_frame_00.png  
+paper/figures/exact_sequence/kaleidoscope_frame_12.png  
+paper/figures/exact_sequence/kaleidoscope_frame_24.png  
 
 🤝 Contributing
 
@@ -199,9 +196,9 @@ MIT License - see LICENSE file for details.
 
 🙏 Acknowledgments
 
-· DeepSeek AI for collaborative development
-· Philosophical insights from constructivist tradition
-· Open source community for tools and inspiration
+· DeepSeek AI for collaborative development  
+· Philosophical insights from constructivist tradition  
+· Open source community for tools and inspiration  
 
 ---
 
