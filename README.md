@@ -178,7 +178,7 @@ paper/figures/kaleidoscope_static.png
 
 Sequence Evolution  
 
-Frame 1, Frame 13, Frame 25
+Frame 1, Frame 13, Frame 25  
 paper/figures/exact_sequence/kaleidoscope_frame_00.png  
 paper/figures/exact_sequence/kaleidoscope_frame_12.png  
 paper/figures/exact_sequence/kaleidoscope_frame_24.png  
