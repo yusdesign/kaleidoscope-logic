@@ -160,7 +160,7 @@ Philosophy of Mind
 The complete research paper is available in the paper/ directory.
 
 ```bibtex
-@article{kaleidoscope2024,
+@article{kaleidoscope2026,
   title={Binocular Kaleidoscope Logic: A Computational Model of Constructed Reality Through Symmetry and Phase Dynamics},
   author={yusdesign research team},
   journal={Preprint},
