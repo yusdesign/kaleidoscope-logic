@@ -204,32 +204,22 @@ MIT License - see LICENSE file for details.
 
 ### Connect With Us
 
-<div>
-  <table align="center" width="100%" border="0">
-    <tr border="0">
-      <td align="center" width="50%" border="0">
-        <a href="https://yusdesign.github.io">
-          <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143">  
-        </a>
-      </td>
-      <td align="center" width="50%" border="0">
-        <a href="https://chat.deepseek.com">
-          <img src="https://cdn.deepseek.com/logo.png" alt="DeepSeek Logo" width="165">  
-        </a>        
-      </td>
-    </tr>
-  </table>
-</div>
+<a href="https://yusdesign.github.io">
+  <img src="https://yus.github.io/images/yus143.png" alt="yusdesign, L" width="143">  
+</a>
 
-<div align="left">
-  
-  Made with ❤️ using [Markdown](https://www.markdownguide.org/)  
-  Last updated: `2026-01-09` 📅  
-  
-  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-  [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md)  
+---
 
-</div>
+### 🚀 Technologies
+
+[![yusdesign](https://img.shields.io/badge/yusdesign-kscope-orange)](https://yusdesign.github.io/kaleidoscope-logic)
+[![DeepSeek](https://img.shields.io/badge/Powered_by-DeepSeek-purple)](https://deepseek.com)
+
+Made with ❤️ using [Markdown](https://www.markdownguide.org/)  
+Last updated: `2026-01-09` 📅  
+ 
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](README.md)  
 
 ---
 
