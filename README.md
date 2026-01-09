@@ -123,12 +123,17 @@ The Three Layers of Perception
 2. Symmetry Operations - Cognitive frameworks (cultural, linguistic, experiential)
 3. Voronoi Phasing - Emergent conceptual boundaries
 
+
 Key Philosophical References
 
 · Constructivist epistemology (Piaget, von Glasersfeld)
+
 · Phenomenology of perception (Merleau-Ponty)
+
 · Autopoiesis (Maturana & Varela)
+
 · Bayesian brain hypothesis
+
 
 🔬 Scientific Applications
 
